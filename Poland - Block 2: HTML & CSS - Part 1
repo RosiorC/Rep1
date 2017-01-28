@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>My first website</title>
+  <style>
+  body{
+    background-color: #cbbb9b;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+  #wrapper{
+    width: 960px;
+    height: auto;
+    background-color: #dad5c1;
+    border-left: 5px solid #a09885;
+    border-right: 5px solid #a09885;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  #header{
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid #7c7063;
+  }
+  #logo {
+    float: left;
+    margin: 15px;
+  }
+  #social{
+    float: right;
+   margin: 20px 30px 0px 0px;
+  }
+  #social ul li{
+    float: left;
+	  list-style: none;
+	  padding-right: 5px;
+  }
+  #social img{
+    height: 55px;
+    width: 55px;
+  }
+  #sidebar{
+    float: left;
+    width: 275px;
+    height: 100%;
+    clear: left;
+  }
+  #menu ul{
+    float: left;
+    height: auto;
+    width: 100px;
+  }
+  #menu ul li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+  }
+  #menu ul li a{
+    background: #cbbb9b;
+    color: #4e4f3e;
+    text-decoration: none;
+    padding: 10px 0px;
+    display: block;
+  }
+  #menu ul li a:hover {
+    color: #fff;
+  }
+  #content{
+    float: left;
+    width: 655px;
+    height: 100%;
+    padding-left: 15px;
+    letter-spacing: 1;
+    color: #57574c;
+    border-left: 3px solid #7c7063;
+  }
+  h1{
+    text-align: center;
+	  border-bottom: 1px solid #7c7063;
+	  padding: 5px;
+  }
+  p{
+    text-indent: 50px;
+	  line-height: 25px;
+	  text-align: justify;
+	}
+	img{
+	  float: right;
+	  padding: 0px 0px 0px 5px;
+	}
+	.top a{
+	  color: #4e4f3e;
+	  text-decoration: none;
+	}
+	#footer{
+	  clear: both;
+	  width: 100%;
+	  height: 80px;
+	  color: #7c7063;
+	  border-top: 3px solid #7c7063;
+	}
+	h5{
+	  text-align: center;
+	}
+	h5 a{
+	  color: #7c7063;
+	}
+  </style>
+  </head>
+  <body>
+  <div id="wrapper">
+    <div id="header">
+	  <a name="top"></a>
+      <div id="logo">
+	  <img src="data:image/jpeg;base64,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" width="200" height="80" alt="logo" title="dachshund" />
+	  </div><!--end of logo-->
+	  <div id="social">
+	    <ul>
+	      <li><a href="http://www.facebok.com" target="_blank"><img src="http://www.hdicon.com/wp-content/uploads/2011/07/Facebook_icon_2011.png" alt="Facebook" title="Facebook" heigt="50" width="50"/></a></li>
+	      <li><a href="http://www.twitter.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/archive/9/9f/20161107041729!Twitter_bird_logo_2012.svg" alt="Twitter" title="Twitter" heigt="50" width="50"/></a></li>
+	      <li><a href="http://www.youtube.com" target="_blank"><img src="https://images.seeklogo.net/2016/06/YouTube-icon-400x400.png" alt="Youtube" title="Youtube" heigt="50" width="50"/></a></li>
+	   </ul>
+	  </div> <!--End of social-->
+    </div><!--end of header-->
+	<div id="sidebar">
+	<div id="menu">
+	  <ul>
+	    <li><h2><a href="#intro">Intro</h2></a></li>
+	    <li><h2><a href="#size">Size</h2></a></li>
+        <li><h2><a href="#food">Food</h2></a></li>
+		<li><h2><a href="#play">Play</h2></a></li>
+	  </ul>
+	</div>
+	</div><!--end of sidebar-->
+	<div id="content">
+	  <a name="intro"><h1>My Dachshund</h1>
+	    <img src="http://jamniki.net/images/headers.jpg?template=zeug-03&colorScheme=blue&header=&button=buttons1" width="400" height="250" alt="Dachshund" title="Dachshund" />
+	    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorpeLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+		  <div class="top"><h4><a href="#top">Go to The Top</a></h4></div>
+		 <a name="size"><h1>Size</h1>
+	    <img src="http://jamniki.net/attachments/Image/Mamba_VII_2008_1.JPG" width="400" height="250" alt="Dachshund" title="Dachshund" />
+	    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorpeLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+      <div class="top"><h4><a href="#top">Go to The Top</a></h4></div>
+		<a name="play"><h1>Play</h1>
+	    <img src="http://jamniki.net/attachments/Image/Mamba_II_2009_1.JPG" width="400" height="250" alt="Dachshund" title="Dachshund" />
+	    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorpeLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+      <div class="top"><h4><a href="#top">Go to The Top</a></h4></div>
+		<a name="food"><h1>Food</h1>
+	    <img src="http://jamniki.net/attachments/Image/Mamba_Nitra_2009.JPG" width="400" height="250" alt="Dachshund" title="Dachshund" />
+	    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorpeLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+<div class="top"><h4><a href="#top">Go to The Top</a></h4></div>
+	</div><!--end of content-->
+	<div id="footer">
+	<h5>Dachshund Dog Website<br><a href="mailto:email.gmail.com subject= Dachshund"> Send me an email</a></h5>
+	</div><!--end of footer-->
+  </div><!--end of wrapper-->
+  </body>
+</html>
